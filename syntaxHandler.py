@@ -42,6 +42,8 @@ def importFile(parsedFile,filePth): # Function to bring in parsed file of type L
 
 def prepareFile(): # Function for writing to filePath (python file to be executed)
     print("preparing file")
+    with open(filePath, "w"): # Wipes the file. Quick workaround lol
+        pass
     global lineCount
     for index, i in enumerate(userFile, start=1):
         lineCount = index
